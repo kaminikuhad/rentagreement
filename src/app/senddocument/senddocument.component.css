@@ -1,0 +1,87 @@
+.heading {
+    color: #269169;
+    font-size: 22px;
+    font-weight: 500px;
+  }
+  
+  .modal.show .modal-dialog {
+    top: 50% !important;
+  }
+  .subHeading {
+    font-size: 16px;
+    color: #4a4a4a;
+  }
+  .custom-btn {
+    color: #fff;
+    background-color: #4f3c96;
+    border-color: #4f3c96;
+  }
+  .Errorheading{
+    color: #dc3545;;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .subHeadingDesc{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .imageError{
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .Warningheading{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .closebtn{
+    color: white;
+  }
+  .btnwidth{
+    width: 100px;
+  }
+  .textinput{
+    width: 100%;
+  }
+  .openbtn{
+    border-radius: 25px;
+    width: 67px;
+    box-shadow: none;
+    border: 1px solid black;
+    background-color: rgba(231, 229, 229, 0.753);;
+  }
+
+  @media screen and (max-width: 425px) {
+    .openbtn{
+      width: 45px !important;
+      height: 44px !important;
+      margin-left: 8px !important;
+      margin-top: 17px !important;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .openbtn{
+      width: 45px !important;
+      height: 44px !important;
+      margin-left: 8px !important;
+      margin-top: 17px !important;
+    }
+    .selectclass{
+      width: 66px !important;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .openbtn{
+      width: 45px !important;
+      height: 44px !important;
+      margin-left: 8px !important;
+      margin-top: 17px !important;
+    }
+    .selectclass{
+      width: 66px;
+    }
+  }
+/* 
+  ::ng-deep .failureHardcopy .modal-content{
+    width: 85% !important;
+  } */

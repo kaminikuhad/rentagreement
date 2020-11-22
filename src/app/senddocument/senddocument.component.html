@@ -1,0 +1,125 @@
+<div class="successModal">
+    <div class="modal-header pt-0">
+       <h5 class="modal-title modalcontent">Send Document</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="cancel()">
+          <span aria-hidden="true">&times;</span>
+       </button>
+    </div>
+    <mat-accordion>
+       <mat-expansion-panel [expanded]="true" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+             <mat-panel-title>
+                 <span
+                   class="text_bold font-weight-bold">Recipient</span>
+             </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>1  soundarya.s@yahoo.com</p>
+          <!-- <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Amount to be paid: </span> <span>{{data?.bankTransfer?.amountToBePaid}}</span>
+          </div> -->
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading">2 soundarya.s@yahoo.com </span>
+             <!-- <span>{{data?.bankTransfer?.accountHolderName}}</span> -->
+          </div>
+          <!-- <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Bank account number: </span>
+             <span>{{data?.bankTransfer?.bankAccNumber}}</span>
+          </div>
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Name of bank: </span> <span>{{data?.bankTransfer?.bankName}}</span>
+          </div>
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Payment reference number/comments for recipient: </span>
+             <span>{{data?.bankTransfer?.referenceNumber}}</span>
+          </div> -->
+       </mat-expansion-panel>
+    </mat-accordion>
+    <hr>
+    <mat-accordion>
+       <mat-expansion-panel [expanded]="true" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+             <mat-panel-title>
+                <!-- <img class="modal-title pull-left" src="./assets/images/paynow.png" alt="success" /> --><span 
+                   class="text_bold font-weight-bold">Carbon copy to</span>
+             </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- <p>Please find the below details for payment via PayNow:</p>
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Amount to be paid: </span> <span>{{data?.paynow?.amountToBePaid}}</span>
+          </div>
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> UEN: </span> <span>{{data?.paynow?.uen}}</span>
+          </div>
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Entity Name: </span> <span>{{data?.paynow?.entityName}}</span>
+          </div>
+          <div style="width: fit-content;" class="mt-2">
+             <span class="requestHeading"> Reference Number: </span> <span>{{data?.paynow?.referenceNumber}}</span>
+          </div> -->
+          <input type="text" class="textinput" placeholder="1  soundarya.s@yahoo.com 2 soundarya.s@yahoo.com">
+       </mat-expansion-panel>
+    </mat-accordion>
+    <hr>
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="true" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+         <mat-expansion-panel-header>
+            <mat-panel-title>
+               <!-- <img class="modal-title pull-left" src="./assets/images/paynow.png" alt="success" /> --><span 
+                  class="text_bold font-weight-bold">Subject and Message</span>
+            </mat-panel-title>
+         </mat-expansion-panel-header>
+         <!-- <p>Please find the below details for payment via PayNow:</p>
+         <div style="width: fit-content;" class="mt-2">
+            <span class="requestHeading"> Amount to be paid: </span> <span>{{data?.paynow?.amountToBePaid}}</span>
+         </div>
+         <div style="width: fit-content;" class="mt-2">
+            <span class="requestHeading"> UEN: </span> <span>{{data?.paynow?.uen}}</span>
+         </div>
+         <div style="width: fit-content;" class="mt-2">
+            <span class="requestHeading"> Entity Name: </span> <span>{{data?.paynow?.entityName}}</span>
+         </div>
+         <div style="width: fit-content;" class="mt-2">
+            <span class="requestHeading"> Reference Number: </span> <span>{{data?.paynow?.referenceNumber}}</span>
+         </div> -->
+         <p>Subject</p>
+         <input type="text" class="textinput" placeholder="">
+         <p class="mt-2">Message</p>
+         <input type="text" class="textinput" placeholder="">
+      </mat-expansion-panel>
+   </mat-accordion>
+    <div class="mt-2">
+       <!-- <button
+          type="button"
+          class="btn btn-default  pl-4 pr-4 closebtn"
+          (click)="cancel()"
+          >
+       Close
+       </button> -->
+       <p class="text_bold font-weight-bold">Advance Options</p>
+       <div class=" d-flex">
+       <div>
+         <label for="Reminders">Reminders</label>
+  <select name="Reminders" id="Reminders" class="selectclass">
+    <option value="Never">Never</option>
+    
+
+    <option value="daily">Daily Until Signed</option>
+    <option value="day">Before Due Dt.</option>
+    <option value="custom">Audi</option>
+  </select>
+       </div>
+       <div>
+         <label for="Deadlines">Deadlines</label>
+         <select name="Deadlines" id="Deadlines" class="selectclass">
+            <option value="Never">Never</option>
+            
+        
+            <option value="daily">Tomorrow</option>
+            <option value="day">One Week</option>
+            <option value="custom">Audi</option>
+          </select>
+       </div>
+       <button class="openbtn justify-content-end ml-5">Send</button>
+      </div>
+    </div>
+ </div>
